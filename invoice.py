@@ -59,8 +59,8 @@ class account_invoice_line(osv.osv):
                     cacc = i_line.product_id.property_account_expense and i_line.product_id.property_account_expense.id
                     if not cacc:
                         cacc = i_line.product_id.categ_id.property_account_expense_categ and i_line.product_id.categ_id.property_account_expense_categ.id
-                    if dacc and cacc:
-                        res.append({
+                    #if dacc and cacc:
+                    #    res.append({
                     #        'type':'src',
                     #        'name': i_line.name[:64],
                     #        'price_unit':i_line.product_id.standard_price,
@@ -71,9 +71,9 @@ class account_invoice_line(osv.osv):
                     #        'uos_id':i_line.uos_id.id,
                     #        'account_analytic_id': False,
                     #        'taxes':i_line.invoice_line_tax_id,
-                            })
+                    #        })
 
-                        res.append({
+                    #    res.append({
                     #        'type':'src',
                     #        'name': i_line.name[:64],
                     #        'price_unit':i_line.product_id.standard_price,
@@ -84,7 +84,7 @@ class account_invoice_line(osv.osv):
                     #        'uos_id':i_line.uos_id.id,
                     #        'account_analytic_id': False,
                     #        'taxes':i_line.invoice_line_tax_id,
-                            })
+                    #        })
         elif inv.type in ('in_invoice','in_refund'):
             for i_line in inv.invoice_line:
                 if i_line.product_id and i_line.product_id.valuation == 'real_time':
