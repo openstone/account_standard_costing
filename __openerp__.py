@@ -22,7 +22,7 @@
     'name': 'Standard Cost Accounting',
     'version': '0.1',
     'author': 'Openstone, Oliver',
-    'website': 'http://openerp.com - http://www.openstone.cn',
+    'website': 'http://www.openstone.cn',
     'description': """
 标准成本: 采购价格差异/生产成本差异记账。
 =====================================================================================================================
