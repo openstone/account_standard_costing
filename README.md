@@ -8,6 +8,7 @@ account_standard_costing
 采购入库
 
   借 库存材料
+  
   贷 材料采购
 
 录入发票
