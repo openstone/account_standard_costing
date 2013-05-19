@@ -1,4 +1,4 @@
-account_standard_costing
+account_standard_costing 6.1
 ========================
 
 已实现 
